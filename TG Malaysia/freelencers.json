@@ -1,0 +1,27 @@
+
+[
+{
+    "id": 1,
+        "username": "Bob",
+        "mail": "bob@gamil.com",
+        "phone number": "123-456-7890",
+        "skillsets": ["Web Development", "JavaScript", "Python"],
+        "hobby": "Gardening"
+    },
+{
+     "id": 2,
+        "username": "Charlie",
+        "mail": " charlie@gamil.com ",
+        "phone number": "987-654-3210",
+        "skillsets": ["Mobile App Development", "Java", "Swift"],
+        "hobby": "Photography"
+    },
+{
+     "id": 3,
+        "username": "alice",
+        "mail": "alice @gmail.com",
+        "phone number": "555-555-5555",
+        "skillsets": ["Data Analysis", "Python", "R"],
+        "hobby": "Hiking"
+    }
+]

@@ -1,0 +1,28 @@
+import json
+
+data = [
+    {
+        "id": 1,
+        "username": "john_doe",
+        "mail": "john.doe@example.com",
+        "phone number": "123-456-7890",
+        "skillsets": ["Web Development", "JavaScript", "Python"],
+        "hobby": "Gardening"
+    },
+    {
+        "id": 2,
+        "username": "jane_smith",
+        "mail": "jane.smith@example.com",
+        "phone number": "987-654-3210",
+        "skillsets": ["Mobile App Development", "Java", "Swift"],
+        "hobby": "Photography"
+    },
+    {
+        "id": 3,
+        "username": "alice_jones",
+        "mail": "alice.jones@example.com",
+        "phone number": "555-555-5555",
+        "skillsets": ["Data Analysis", "Python", "R"],
+        "hobby": "Hiking"
+    }
+]

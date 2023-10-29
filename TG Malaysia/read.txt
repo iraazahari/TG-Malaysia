@@ -1,0 +1,35 @@
+CANDIDATE: NUR SHAHIRAH
+CONTACT: shahirahnur62@gmail.com
+
+1. Connect to any of well-known RDBMS database (SQL server management studio).
+
+2. import json data using OPENROWSET
+	SELECT *
+	FROM OPENROWSET (Bulk 'C:\Users\TG Malaysia\freelencers.JSON', SINGLE_CLOB) import
+
+3. convert json output from variable into SQL server table
+	Declare @JSON varchar(max)
+	SELECT @JSON = BulkColumn
+	FROM OPENROWSET (Bulk 'C:\Users\ikhma\OneDrive\Desktop\TG Malaysia\freelencers.JSON', SINGLE_CLOB) import
+	SELECT *
+	FROM OPENJSON (@JSON)
+
+4. import json file data into sql server table
+	Declare @JSON varchar(max)
+	SELECT @JSON = BulkColumn
+	FROM OPENROWSET (Bulk 'C:\Users\ikhma\OneDrive\Desktop\TG Malaysia\freelencers.JSON', SINGLE_CLOB) import
+	SELECT * into freelancers
+	FROM OPENJSON (@JSON)
+	WITH
+		(
+			[id] INT ,
+			[username] NVARCHAR(255),
+			[mail] NVARCHAR(255),
+			[phoneNumber] NVARCHAR(20),
+			[skillsets] NVARCHAR(MAX),
+			[hobby] NVARCHAR(255)
+		)
+
+5. finally can select */add/delete/update data from table created
+
+
